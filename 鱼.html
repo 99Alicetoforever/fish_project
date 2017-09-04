@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            padding-top: 10px;
+        }
+        #bg{
+            width:800px;
+            height:600px;
+            margin:0px auto;
+        }
+        #Allcanvas{
+            position: relative;
+            width:800px;
+            height:600px;
+            margin:0px auto;
+        }
+        #canvas1{
+            position: absolute;
+            left:0px;
+            bottom:0px;
+            z-index: 10;
+        }
+        #canvas2{
+            position: absolute;
+            left:0px;
+            bottom:0px;
+            z-index: 0;
+          }
+    </style>
+</head>
+<body>
+   <div id="bg">
+       <div id="Allcanvas">
+           <!--用两个canvas原因：因为，所有的游戏内容都是基于canvas的，减轻浏览器渲染的压力-->
+           <canvas id="canvas1" width="800" height="600"></canvas>
+           <canvas id="canvas2" width="800" height="600"></canvas>
+       </div>
+   </div>
+
+   <script src="js/commonFunctions.js"></script>
+   <script src="js/ane.js"></script>
+   <script src="js/fruit.js"></script>
+   <script src="js/mon.js"></script>
+   <script src="js/baby.js"></script>
+   <script src="js/pc.js"></script>
+   <script src="js/data.js"></script>
+   <script src="js/mian.js"></script>
+   <script src="js/wave.js"></script>
+
+
+
+</body>
+</html>
